@@ -3,6 +3,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import urllib
 
+
 # extract text from given url
 def extract_text(url):
     html = urllib.request.urlopen(url).read()
@@ -15,6 +16,7 @@ def extract_text(url):
     text = soup.get_text()
 
     return text
+
 
 # take a url, run text extraction, create regex to search color scheme names
 # return a list of schemes
@@ -29,3 +31,4 @@ def extract_scheme_names():
         name_list.append(i[0])
 
     return name_list
+
