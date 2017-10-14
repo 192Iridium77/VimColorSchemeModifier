@@ -35,10 +35,9 @@ for line in file:
         original = line
 file.close()
 
-# if .vimrc exists, but there is no colorscheme
+# TODO if .vimrc exists, but there is no colorscheme 
 
-
-# if .vimrc DNE, create .vimrc in users home file and add colorscheme to it
+# TODO if .vimrc DNE, create .vimrc in users home file and add colorscheme to it
 
 
 shelf_file = shelve.open('color_data')
